@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+.navlist {
+  background-color: rgb(3, 49, 75);
+  width: 50%;
+  display: flex;
+  align-content: center;
+}
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 30%;
+  border: 3px solid white;
+}
+.navlist li a {
+  text-decoration: none;
+  color: beige;
+}
+.navlist li a:hover {
+  text-decoration: none;
+  color: rgb(156, 205, 49);
+}
+.navlist li {
+  list-style: none;
+  padding: 20px;
+  font-size: large;
+}
+.rightnav {
+  background-color: rgb(3, 49, 75);
+  width: 50%;
+  text-align: justify;
+  padding-top: 17px;
+}
+
+input#search {
+  width: 250px;
+  height: 25px;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255);
+  align-self: center;
+}
+button.wallet {
+  padding: 10px;
+  border-radius: 9px;
+  color: rgb(1, 1, 1);
+  background-color: rgb(255, 240, 127);
+   justify-content: right;
+  margin-left: 300px;
+}
+button.wallet:hover {
+  padding: 10px;
+  border-radius: 9px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  font-weight: bold;
+}
+button.button {
+  padding: 5px;
+  border-radius: 4px;
+}
+button.button:hover {
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}

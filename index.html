@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT marketplace</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bgimg">
+    <img src="img\SL_0212121_40670_54.jpg" id="crimg">
+  
+    <script src="js.js"></script>
+    <nav class="navbar">
+      <ul class="navlist">
+        <div class="logo"><img src="img/mon.jpeg" alt="logo" /></div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Explore">Explore</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="Create">Create</a></li>
+        <li><a href="signin.html">Sign-in</a></li>
+      </ul>
+      <div class="rightnav">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for collections, NFTs and Users"
+        />
+        <button class="button1 btn-sm" onclick="search">Search</button>
+        <button class="wallet">Connect wallet</button>
+      </div>
+    </nav>
+    <section class="img9">
+      <section class="background first section">
+        <div class="flex-container">
+          <header>
+            <h1 class="cut-write-heading">Trending</h1>
+          </header>
+        </div>
+      </section>
+      <section class="grid">
+        <div class="container">
+          <!-- <h5>Pick your favourite NFT!</h5> -->
+          <div class="item-grid">
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,landscape"
+                alt="Item 1"
+              />
+              <h2>Nft</h2>
+              <p>Owner: ID781</p>
+              <p class="price">0.5 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <!-- <img src="img\meta.png" id="meta"> -->
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <!-- <img src="img/coinbase.jpeg" id="coinbase"> -->
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <!-- <img src="img\wall.png" id="wall"> -->
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <!-- <img src="img/phantom.png" id="phantom"> -->
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,nft"
+                alt="Item 2"
+              />
+              <h2>"MaN"</h2>
+              <p>Owner: 0098</p>
+              <p class="price">0.098 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,dog"
+                alt="Item 2"
+              />
+              <h2>"Unicorn"</h2>
+              <p>Owner: To98</p>
+              <p class="price">0.22 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,house"
+                alt="Item 2"
+              />
+              <h2>"Frame"</h2>
+              <p>Owner: UX908</p>
+              <p class="price">1.2 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,riverdale"
+                alt="Item 2"
+              />
+              <h2>"Cottage"</h2>
+              <p>Owner: HJ987</p>
+              <p class="price">0.345 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,code"
+                alt="Item 2"
+              />
+              <h2>"Hytopia"</h2>
+              <p>Owner: TY765</p>
+              <p class="price">2.4 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,tech"
+                alt="Item 2"
+              />
+              <h2>"Monkey"</h2>
+              <p>Owner: ER883</p>
+              <p class="price">1.2 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,keyboard"
+                alt="Item 2"
+              />
+              <h2>"Kangaroo"</h2>
+              <p>Owner: DeIsh90</p>
+              <p class="price">3 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,car"
+                alt="Item 2"
+              />
+              <h2>"Mount"</h2>
+              <p>Owner: 98IJ</p>
+              <p class="price">0.009 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,stars"
+                alt="Item 2"
+              />
+              <h2>"Stars"</h2>
+              <p>Owner: e2dIJ</p>
+              <p class="price">1.00 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,city"
+                alt="Item 2"
+              />
+              <h2>"City"</h2>
+              <p>Owner: 89uJ</p>
+              <p class="price">0.089 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://source.unsplash.com/random/1920x1080/?wallpaper,dance"
+                alt="Item 2"
+              />
+              <h2>"Dance"</h2>
+              <p>Owner: op09</p>
+              <p class="price">0.089 ETH</p>
+              <button onclick="openPopup()">Buy Now</button>
+              <div class="overlay" id="overlay">
+                <div class="popup">
+                  <p class="head">Chose Your Wallet:</p>
+                  <a
+                    href="https://metamask.io/"
+                    onclick="redirect('https://metamask.io/)"
+                    id="log"
+                    >Metamask</a
+                  >
+
+                  <a
+                    href="https://www.coinbase.com/"
+                    onclick="redirect('https://www.coinbase.com/')"
+                    id="log"
+                    >Coinbase</a
+                  >
+                  <a
+                    href="https://walletconnect.com/"
+                    onclick="redirect('https://walletconnect.com/')"
+                    id="log"
+                    >Wallet Connect</a
+                  >
+                  <a
+                    href="https://phantom.app/"
+                    onclick="redirect('https://phantom.app/')"
+                    id="log"
+                    >Phantom</a
+                  >
+                  <br />
+                  <button onclick="closePopup()" id="close">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="foot-panel1"> <button class="top">Back to top</button></div>
+      <div class="foot-panel2">
+        <ul>
+          <p class="head1">Get to know N50</p>
+          <a>Blog</a>
+          <a>Career</a>
+          <a>About N50</a>
+          <a>Founders</a>
+        </ul>
+        <ul>
+          <p class="head2">Contact Us</p>
+          <a>Email: N50@gmail.com</a>
+          <a>Ph no: 6678465593</a>
+          <a>Twitter: N50@X</a>
+        </ul>
+        <ul>
+          <p class="head3">Address</p>
+          <a href="https://maps.app.goo.gl/JGDWgmoJm6JprBc49" class="add"
+            >I-81, Noman's Road</a
+          >
+        </ul>
+        
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>

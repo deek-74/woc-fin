@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+.navlist {
+  background-color: rgb(3, 49, 75);
+  width: 50%;
+  display: flex;
+  align-content: center;
+}
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 30%;
+  border: 3px solid white;
+}
+.navlist li a {
+  text-decoration: none;
+  color: beige;
+}
+.navlist li a:hover {
+  text-decoration: none;
+  color: rgb(156, 205, 49);
+}
+.navlist li {
+  list-style: none;
+  padding: 20px;
+  font-size: large;
+}
+.rightnav {
+  background-color: rgb(3, 49, 75);
+  width: 50%;
+  text-align: justify;
+  padding-top: 17px;
+}
+
+input#search {
+  width: 250px;
+  height: 25px;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255);
+  align-self: center;
+}
+button.wallet {
+  padding: 10px;
+  border-radius: 9px;
+  color: rgb(1, 1, 1);
+  background-color: rgb(255, 240, 127);
+  /* justify-content: right; */
+  margin-left: 300px;
+}
+button.wallet:hover {
+  padding: 10px;
+  border-radius: 9px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  font-weight: bold;
+}
+button.button {
+  padding: 5px;
+  border-radius: 4px;
+}
+button.button:hover {
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.background {
+    /* padding-top: 700px; */
+  display: flex;
+  background: rgba(0, 71, 146, 0.911) url("img/1.jpeg");
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 100px;
+}
+
+h1 {
+  font-size: 300%;
+  font-weight: bold;
+  /* background-color:rgb(44, 78, 97) ; */
+  color: beige;
+  padding-top: 20px;
+  padding-left: 150px;
+}
+/* @keyframes cutWrite {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+} */
+
+/* .cut-write-heading {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: cutWrite 4s infinite;
+  border-right: 2px solid #333; /* Simulates the cursor line */
+/* }  */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(52, 62, 93);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 275px;
+    height: 200px;
+    color: beige;
+    font-size: larger;
+
+}
+
+#log{
+    display:flex;
+    padding: 5px;
+    background-color: rgb(52, 62, 93);
+    font-size: large;
+    color: beige;
+}
+.head{
+    font-size: larger;
+    font-weight: bold;
+}
+#close{
+    font-size: medium;
+    background-color: rgb(230, 28, 28);
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    
+}

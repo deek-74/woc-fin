@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="css/buy.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navlist">
+        <div class="logo"><img src="img/mon.jpeg" alt="logo" /></div>
+        <li><a href="Create">Create</a></li>
+        <li><a href="Explore">Explore</a></li>
+        <li><a href="Sell">Sell</a></li>
+        <li><a href="Drops">Drops</a></li>
+        <li><a href="signin.html">Sign-in</a></li>
+      </ul>
+      <div class="rightnav">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for collections, NFTs and Users"
+        />
+        <button class="button btn-sm">Search</button>
+        <button class="wallet">Connect wallet</button>
+      </div>
+    </nav>
+    <!-- <section class="img9">
+      <section class="background first section">
+        <div class="flex-container">
+          <header>
+            <h1 class="cut-write-heading">Similar Searches</h1>
+          </header>
+        </div>
+      </section> -->
+  </body>
+</html>
+<!-- <button class="buy"><a href="buynow.html"> Buy Now</a></button> -->
+<button onclick="openPopup()">Buy Now</button>
+
+<div class="overlay" id="overlay">
+  <div class="popup">
+    <p class="head">Chose Your Wallet:</p>
+    <a href="https://metamask.io/" onclick="redirect('https://metamask.io/)" id="log"
+    
+      >Metamask</a
+    >
+    <a
+      href="https://www.coinbase.com/"
+      onclick="redirect('https://www.coinbase.com/')" id="log"
+      >Coinbase</a>
+    <a
+      href="https://walletconnect.com/"
+      onclick="redirect('https://walletconnect.com/')" id="log"
+      >Wallet Connect</a>
+    <a
+      href="https://phantom.app/"
+      onclick="redirect('https://phantom.app/')" id="log"
+      >Phantom</a>
+    <br>
+    <button onclick="closePopup()" id="close">Close</button>
+  </div>
+</div>
+
+<script>
+  function openPopup() {
+    document.getElementById("overlay").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+  function redirect(url) {
+    window.location.href = url;
+  }
+</script>

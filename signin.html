@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/signinstyle.css" />
+  </head>
+  <body>
+   
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <div class="logo"><img src="img/mon.jpeg" alt="logo" /></div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Explore">Explore</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><a href="Create">Create</a></li>
+          <li><a href="signin.html">Sign-in</a></li>
+        </ul>
+        <div class="rightnav">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search for collections, NFTs and Users"
+          />
+          <button class="button1 btn-sm" onclick="search()">Search</button>
+          <button class="wallet">Connect wallet</button>
+        </div>
+      </nav>
+      <!-- <div class="bg"> -->
+        <!-- <img src="img\SL_0212121_40670_54.jpg" alt="img" class="bgimg"> -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <form id="signInForm">
+          <h2>Sign In</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <br>
+          <label for="Email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <br>
+          <button class="signin" type="submit">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    <script type="module">
+      function redirectToHomepage() {
+          window.location.href = "index.html";
+      }
+    
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+      
+      const firebaseConfig = {
+        apiKey: "AIzaSyByC6mCA_osDpUA-oO3DYqqOo1UPN980Vc",
+        authDomain: "nftmarket-246a8.firebaseapp.com",
+        projectId: "nftmarket-246a8",
+        storageBucket: "nftmarket-246a8.appspot.com",
+        messagingSenderId: "842726169733",
+        appId: "1:842726169733:web:b633d3d044f894cfed5dec"
+      };
+    
+     
+      const app = initializeApp(firebaseConfig);
+      const db= getDatabase();
+      const auth= getAuth(app);
+
+      let email=document.getElementById('email');
+      let password=document.getElementById('password');
+      let username=document.getElementById('username');
+
+      let registeruser=evt=>{
+        evt.preventDefault();
+
+        createUserWithEmailAndPassword(auth, email.value, password.value)
+        .then((credentials)=>{
+          console.log(credentials);
+          alert('user registered successfuly');
+          redirectToHomepage()
+
+
+        })
+        .catch((error)=>{
+          alert(error.message);
+          console.log(error.code);
+          console.log(error.message);
+        })
+      }
+      signInForm.addEventListener('submit', registeruser);
+      
+    </script>
+    <!-- <script>
+      function redirectToHomepage() {
+          window.location.href = "index.html"; // Replace "homepage.html" with the actual URL of your homepage
+      }
+  </script> -->
+  
+
+<hr>
+<section class="footer">
+<footer>
+  <div class="foot-panel1">Back to top</div>
+  <div class="foot-panel2">
+    <ul>
+      <p class="head1">Get to know N50</p>
+      <a>Blog</a>
+      <a>Career</a>
+      <a>About N50</a>
+      <a>Founders</a>
+    </ul>
+    <ul>
+      <p class="head2">Contact Us</p>
+      <a>Email: N50@gmail.com</a>
+      <a>Ph no: 6678465593</a>
+      <a>Twitter: N50@X</a>
+    </ul>
+    <ul>
+      <p class="head3">Address</p>
+      <a href="https://maps.app.goo.gl/JGDWgmoJm6JprBc49" class="add"
+        >I-81, Noman's Road</a
+      >
+    </ul>
+   
+  </div>
+</footer>
+</section>
+</body> 
+</html>
